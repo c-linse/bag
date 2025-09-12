@@ -459,31 +459,6 @@ function App() {
               </div>
             </div>
             
-            <div className="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-              <h4 className="text-xl font-bold mb-6 text-gray-300">Schedule a Call</h4>
-              
-              {/* Calendly Integration Placeholder */}
-              <div className="bg-gray-900 p-6 rounded-xl border-2 border-dashed border-gray-600 text-center">
-                <Calendar size={48} className="text-gray-500 mx-auto mb-4" />
-                <p className="text-gray-400 mb-4">
-                  Replace this section with your Calendly embed code
-                </p>
-                <div className="text-sm text-gray-500 bg-gray-800 p-4 rounded-lg">
-                  <p className="mb-2">To integrate Calendly:</p>
-                  <ol className="text-left space-y-1">
-                    <li>1. Get your Calendly embed code</li>
-                    <li>2. Replace this placeholder div</li>
-                    <li>3. Add the Calendly script to your HTML head</li>
-                  </ol>
-                </div>
-              </div>
-              
-              <div className="mt-6 text-center">
-                <button className="px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
-                  Book a Call
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
