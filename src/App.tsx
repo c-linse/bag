@@ -12,7 +12,6 @@ import {
   Mail,
   Github,
   Linkedin,
-  Twitter,
   ArrowRight,
   Star,
   CheckCircle,
@@ -155,8 +154,12 @@ function App() {
             <a href="#" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-300">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-300">
-              <Twitter size={24} />
+            <a href="https://www.strava.com/athletes/christophlinse" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-300">
+              <img
+                src="https://cdn.simpleicons.org/strava/ffffff"
+                alt="Strava"
+                className="w-6 h-6"
+              />
             </a>
           </div>
         </div>
@@ -453,8 +456,12 @@ function App() {
                 <a href="#" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-300">
                   <Linkedin size={24} />
                 </a>
-                <a href="#" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-300">
-                  <Twitter size={24} />
+                <a href="https://www.strava.com/athletes/christophlinse" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors duration-300">
+                  <img
+                    src="https://cdn.simpleicons.org/strava/ffffff"
+                    alt="Strava"
+                    className="w-6 h-6"
+                  />
                 </a>
               </div>
             </div>
