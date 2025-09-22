@@ -1,5 +1,5 @@
 import React from "react";
-import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github } from "lucide-react";
+import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github, CalendarDays } from "lucide-react";
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
@@ -81,6 +81,7 @@ export default function ChristophLanding() {
                             <span>Share this page</span>
                         </Button>
                         <Button onClick={handleSchedule} variant="secondary">
+                            <CalendarDays className="w-4 h-4" />
                             <span>Schedule meeting</span>
                         </Button>
                     </div>
