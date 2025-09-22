@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Share2, Copy, Briefcase, GraduationCap, Linkedin, Youtube, Activity } from "lucide-react";
+import { Share2, Copy, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github } from "lucide-react";
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
@@ -149,7 +149,17 @@ export default function ChristophLanding() {
                 </section>
 
                 <footer className="mt-10 text-center text-xs opacity-70">
-                    <p>© {new Date().getFullYear()} Christoph Linse • All rights reserved</p>
+                    <p>
+                        © {new Date().getFullYear()} Christoph Linse • All rights reserved{' '}
+                        <a
+                            href="https://github.com/c-linse/bag"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block ml-1"
+                        >
+                            <Github className="w-4 h-4 inline" aria-label="GitHub" />
+                        </a>
+                    </p>
                 </footer>
             </div>
         </div>
