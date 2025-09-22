@@ -110,7 +110,7 @@ export default function ChristophLanding() {
                                 hint="Course author profile"
                             />
                             <LinkCard
-                                href="https://www.linkedin.com/in/christoph-linse-a29662221/"
+                                href="https://www.linkedin.com/in/christoph-linse"
                                 Icon={Linkedin}
                                 label="LinkedIn"
                                 hint="/christoph-linse"
@@ -127,10 +127,10 @@ export default function ChristophLanding() {
                         </CardHeader>
                         <CardContent className="grid sm:grid-cols-2 gap-4">
                             <LinkCard
-                                href="https://www.strava.com/athletes/christoph_linse"
+                                href="https://www.strava.com/athletes/christoph-linse"
                                 Icon={Activity}
                                 label="Strava"
-                                hint="Athlete christoph_linse"
+                                hint="Athlete christoph-linse"
                             />
                             <LinkCard
                                 href="https://www.youtube.com/@christophlinse1811"
