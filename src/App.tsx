@@ -48,6 +48,7 @@ function LinkCard({ href, Icon, label, hint }) {
 export default function ChristophLanding() {
     const [copied, setCopied] = useState(false);
 
+    const CALENDLY_URL = "https://calendly.com/christophlinse";
     const handleShare = async () => {
         const url = window.location.href;
         if (navigator.share) {
@@ -63,6 +64,10 @@ export default function ChristophLanding() {
         } catch (_) {
             alert("Could not copy link");
         }
+    };
+
+    const handleSchedule = () => {
+        window.open(CALENDLY_URL, "_blank");
     };
 
     return (
@@ -81,6 +86,9 @@ export default function ChristophLanding() {
                         <Button onClick={handleShare} variant="secondary">
                             <Copy className="w-4 h-4" />
                             <span>{copied ? "Copied!" : "Copy link"}</span>
+                        </Button>
+                        <Button onClick={handleSchedule} variant="secondary">
+                            <span>Schedule meeting</span>
                         </Button>
                     </div>
                 </header>
