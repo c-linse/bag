@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Share2, Copy, Briefcase, GraduationCap, Linkedin, Instagram, Youtube, Activity } from "lucide-react";
+import { Share2, Copy, Briefcase, GraduationCap, Linkedin, Youtube, Activity } from "lucide-react";
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
@@ -120,7 +120,7 @@ export default function ChristophLanding() {
                     <Card>
                         <CardHeader>
                             <CardTitle>
-                                <Instagram className="w-5 h-5" /> Social, Media & Fitness
+                                <Share2 className="w-5 h-5" /> Social, Media & Fitness
                             </CardTitle>
                         </CardHeader>
                         <CardContent className="grid sm:grid-cols-2 gap-4">
@@ -129,12 +129,6 @@ export default function ChristophLanding() {
                                 Icon={Activity}
                                 label="Strava"
                                 hint="Athlete 143262221"
-                            />
-                            <LinkCard
-                                href="https://instagram.com/"
-                                Icon={Instagram}
-                                label="Instagram"
-                                hint="(Add your handle)"
                             />
                             <LinkCard
                                 href="https://www.youtube.com/@christophlinse1811"
