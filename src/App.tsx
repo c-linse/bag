@@ -125,10 +125,10 @@ export default function ChristophLanding() {
                         </CardHeader>
                         <CardContent className="grid sm:grid-cols-2 gap-4">
                             <LinkCard
-                                href="https://www.strava.com/athletes/143262221"
+                                href="https://www.strava.com/athletes/christoph_linse"
                                 Icon={Activity}
                                 label="Strava"
-                                hint="Athlete 143262221"
+                                hint="Athlete christoph_linse"
                             />
                             <LinkCard
                                 href="https://www.youtube.com/@christophlinse1811"
