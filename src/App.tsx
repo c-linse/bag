@@ -3,10 +3,10 @@ import { Share2, Copy, Briefcase, GraduationCap, Linkedin, Instagram, Youtube, A
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
-    return <div className={`bg-white/5 dark:bg-white/5 border border-white/10 rounded-2xl ${className}`}>{children}</div>;
+    return <div className={`bg-white border border-gray-200 rounded-2xl ${className}`}>{children}</div>;
 }
 function CardHeader({ children, className = "" }) {
-    return <div className={`px-4 pt-4 pb-2 border-b border-white/10 ${className}`}>{children}</div>;
+    return <div className={`px-4 pt-4 pb-2 border-b border-gray-200 ${className}`}>{children}</div>;
 }
 function CardTitle({ children, className = "" }) {
     return <div className={`font-semibold flex items-center gap-2 ${className}`}>{children}</div>;
@@ -18,8 +18,8 @@ function CardContent({ children, className = "" }) {
 function Button({ children, onClick, variant = "primary", className = "" }) {
     const base = "inline-flex items-center gap-2 rounded-2xl px-4 py-2 border text-sm transition-shadow";
     const styles = variant === "secondary"
-        ? "border-white/15 bg-transparent hover:shadow-lg"
-        : "border-transparent bg-indigo-600 text-white hover:shadow-lg";
+        ? "border border-gray-300 bg-white text-gray-800 hover:shadow-lg"
+        : "border-transparent bg-gray-800 text-white hover:shadow-lg";
     return (
         <button onClick={onClick} className={`${base} ${styles} ${className}`}>
             {children}
@@ -66,7 +66,7 @@ export default function ChristophLanding() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-950 text-slate-100">
+        <div className="min-h-screen bg-gray-100 text-gray-800">
             <div className="max-w-4xl mx-auto px-4 py-10 sm:py-14">
                 {/* Header */}
                 <header className="text-center mb-10">
