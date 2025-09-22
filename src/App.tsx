@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Share2, Copy, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github } from "lucide-react";
+import React from "react";
+import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github } from "lucide-react";
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
@@ -46,7 +46,6 @@ function LinkCard({ href, Icon, label, hint }) {
 }
 
 export default function ChristophLanding() {
-    const [copied, setCopied] = useState(false);
 
     const CALENDLY_URL = "https://calendly.com/christophlinse";
     const handleShare = async () => {
@@ -59,8 +58,6 @@ export default function ChristophLanding() {
         }
         try {
             await navigator.clipboard.writeText(url);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
         } catch (_) {
             alert("Could not copy link");
         }
@@ -82,10 +79,6 @@ export default function ChristophLanding() {
                         <Button onClick={handleShare}>
                             <Share2 className="w-4 h-4" />
                             <span>Share this page</span>
-                        </Button>
-                        <Button onClick={handleShare} variant="secondary">
-                            <Copy className="w-4 h-4" />
-                            <span>{copied ? "Copied!" : "Copy link"}</span>
                         </Button>
                         <Button onClick={handleSchedule} variant="secondary">
                             <span>Schedule meeting</span>
