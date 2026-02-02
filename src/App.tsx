@@ -1,5 +1,5 @@
 import React from "react";
-import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github, CalendarDays } from "lucide-react";
+import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github, CalendarDays, Award } from "lucide-react";
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
@@ -102,6 +102,12 @@ export default function ChristophLanding() {
                                 Icon={Briefcase}
                                 label="ONLU – Technical Experience"
                                 hint="Consulting profile"
+                            />
+                            <LinkCard
+                                href="https://www.credly.com/users/christoph-linse"
+                                Icon={Award}
+                                label="Certifications"
+                                hint="View of obtained certifications"
                             />
                             <LinkCard
                                 href="https://www.udemy.com/user/christoph-linse/"
