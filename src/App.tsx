@@ -1,5 +1,5 @@
 import React from "react";
-import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github, CalendarDays, Award } from "lucide-react";
+import { Share2, Briefcase, GraduationCap, Linkedin, Youtube, Activity, Github, CalendarDays, Award, Terminal } from "lucide-react";
 
 // Simple Card primitives (no external UI library required)
 function Card({ children, className = "" }) {
@@ -120,6 +120,12 @@ export default function ChristophLanding() {
                                 Icon={Linkedin}
                                 label="LinkedIn"
                                 hint="/christoph-linse"
+                            />
+                            <LinkCard
+                                href="https://profile.hackthebox.com/profile/019d5e22-ba31-70c0-b419-b518840b005c"
+                                Icon={Terminal}
+                                label="Hack The Box"
+                                hint="Public profile"
                             />
                         </CardContent>
                     </Card>
