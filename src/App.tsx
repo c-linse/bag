@@ -116,12 +116,6 @@ export default function ChristophLanding() {
                                 hint="Course author profile"
                             />
                             <LinkCard
-                                href="https://www.linkedin.com/in/christoph-linse"
-                                Icon={Linkedin}
-                                label="LinkedIn"
-                                hint="/christoph-linse"
-                            />
-                            <LinkCard
                                 href="https://profile.hackthebox.com/profile/019d5e22-ba31-70c0-b419-b518840b005c"
                                 Icon={Terminal}
                                 label="Hack The Box"
@@ -149,6 +143,12 @@ export default function ChristophLanding() {
                                 Icon={Youtube}
                                 label="YouTube"
                                 hint="@christophlinse1811"
+                            />
+                            <LinkCard
+                                href="https://www.linkedin.com/in/christoph-linse"
+                                Icon={Linkedin}
+                                label="LinkedIn"
+                                hint="/christoph-linse"
                             />
                         </CardContent>
                     </Card>
