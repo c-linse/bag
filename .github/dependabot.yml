@@ -9,3 +9,11 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"          # root of the repo, not .github/workflows/
+    schedule:
+      interval: "weekly"    # or "daily" / "monthly"
+    groups:                 # optional: batch into one PR
+      github-actions:
+        patterns:
+          - "*"
