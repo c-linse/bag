@@ -1,5 +1,5 @@
 import React from "react";
-import { Share2, Briefcase, GraduationCap, Activity, CalendarDays, Award, Terminal } from "lucide-react";
+import { Share2, Briefcase, GraduationCap, Activity, CalendarDays, Award, Terminal, Rocket } from "lucide-react";
 
 function LinkedinIcon({ className = "", ...props }) {
     return (
@@ -90,6 +90,15 @@ export default function ChristophLanding() {
                 <header className="text-center mb-10">
                     <h1 className="mt-2 text-3xl sm:text-5xl font-semibold tracking-tight">Christoph Linse</h1>
                     <p className="mt-3 text-base sm:text-lg opacity-80">Engineer • Educator • Endurance Athlete</p>
+                    <a
+                        href="https://www.cncf.io/training/kubestronaut/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs sm:text-sm text-amber-800 hover:shadow-md transition-shadow"
+                    >
+                        <Rocket className="w-4 h-4" aria-hidden />
+                        <span>Golden Kubestronaut</span>
+                    </a>
 
                     <div className="mt-6 flex items-center justify-center gap-3 flex-wrap">
                         <Button onClick={handleShare}>
