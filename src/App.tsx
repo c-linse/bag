@@ -70,11 +70,11 @@ export default function ChristophLanding() {
             try {
                 await navigator.share({ title: "Christoph Linse – Links", text: "Check out Christoph Linse's landing page:", url });
                 return;
-            } catch (_) { /* user canceled */ }
+            } catch { /* user canceled */ }
         }
         try {
             await navigator.clipboard.writeText(url);
-        } catch (_) {
+        } catch {
             alert("Could not copy link");
         }
     };
